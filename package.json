@@ -1,0 +1,33 @@
+{
+    "name": "tempojs",
+    "version": "0.1.0",
+    "description": "TempoJS is a JavaScript game engine for turn-based games.",
+    "main": "index.js",
+    "scripts": {
+        "prettier": "npx prettier --write .",
+        "lint": "npx eslint --fix lib/*",
+        "code-check": "npm run flow && npm run prettier && npm run remove-flow && npm run lint",
+        "flow": "npx flow",
+        "remove-flow": "flow-remove-types src/ -d lib/",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Katreque/TempoJS.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Katreque/TempoJS/issues"
+    },
+    "homepage": "https://github.com/Katreque/TempoJS#readme",
+    "devDependencies": {
+        "eslint": "^7.11.0",
+        "eslint-config-airbnb-base": "^14.2.0",
+        "eslint-config-prettier": "^6.14.0",
+        "eslint-plugin-import": "^2.22.1",
+        "flow-bin": "^0.136.0",
+        "flow-remove-types": "^2.136.0",
+        "prettier": "^2.1.2"
+    }
+}

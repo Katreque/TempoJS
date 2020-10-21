@@ -4,13 +4,13 @@ about: Did you find a bug? Report it here. :)
 title: ''
 labels: bug
 assignees: ''
-
 ---
 
 **Describe the bug**
 A clear and concise description of what the bug is.
 
 **To Reproduce**
+
 1. Call x function...
 2. Event y is called...
 3. Error.

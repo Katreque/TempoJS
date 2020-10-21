@@ -14,22 +14,22 @@ appearance, race, religion, or sexual identity and orientation.
 Examples of behavior that contributes to creating a positive environment
 include:
 
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
+-   Using welcoming and inclusive language
+-   Being respectful of differing viewpoints and experiences
+-   Gracefully accepting constructive criticism
+-   Focusing on what is best for the community
+-   Showing empathy towards other community members
 
 Examples of unacceptable behavior by participants include:
 
-* The use of sexualized language or imagery and unwelcome sexual attention or
- advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic
- address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
- professional setting
+-   The use of sexualized language or imagery and unwelcome sexual attention or
+    advances
+-   Trolling, insulting/derogatory comments, and personal or political attacks
+-   Public or private harassment
+-   Publishing others' private information, such as a physical or electronic
+    address, without explicit permission
+-   Other conduct which could reasonably be considered inappropriate in a
+    professional setting
 
 ## Our Responsibilities
 
@@ -49,7 +49,7 @@ It's always ok to ask questions. Once you find the answer, document it in the
 first place you looked. That way, the next person will be brought up to speed
 even quicker.
 
-![alt text](https://camo.githubusercontent.com/dc03b88e20e758f59b09d6819f66994d7503e379/68747470733a2f2f696d67732e786b63642e636f6d2f636f6d6963732f74656e5f74686f7573616e642e706e67 "Question")
+![alt text](https://camo.githubusercontent.com/dc03b88e20e758f59b09d6819f66994d7503e379/68747470733a2f2f696d67732e786b63642e636f6d2f636f6d6963732f74656e5f74686f7573616e642e706e67 'Question')
 
 ## Scope
 
