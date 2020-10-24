@@ -4,5 +4,5 @@
 const Player = require('./classes/player');
 
 module.exports = {
-    Player,
+    Player
 };

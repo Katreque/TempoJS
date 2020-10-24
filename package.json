@@ -10,7 +10,8 @@
         "flow": "npx flow",
         "remove-flow": "flow-remove-types --pretty src/ -d lib/",
         "test": "nyc ava",
-        "build": "npm run test && npm run code-check"
+        "uglify": "npx uglifyjs-folder lib/ -eo build/ --log-level error",
+        "build": "npm run test && npm run code-check && npm run uglify"
     },
     "repository": {
         "type": "git",
@@ -31,6 +32,7 @@
         "flow-bin": "^0.136.0",
         "flow-remove-types": "^2.136.0",
         "nyc": "^15.1.0",
-        "prettier": "^2.1.2"
+        "prettier": "^2.1.2",
+        "uglifyjs-folder": "^2.0.0"
     }
 }
