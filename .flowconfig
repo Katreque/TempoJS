@@ -1,4 +1,9 @@
 [ignore]
+./node_modules
+./build
+./lib
+.nyc_output
+coverage
 
 [include]
 
