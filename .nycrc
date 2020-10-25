@@ -1,0 +1,17 @@
+{
+    "all": true,
+    "include": [
+        "lib/**/*"
+    ],
+    "exclude": [
+        "src/",
+        "build/"
+    ],
+    "check-coverage": true,
+    "lines": 95,
+    "functions": 100,
+    "reporter": [
+        "text",
+        "html"
+    ]
+}

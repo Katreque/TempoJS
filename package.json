@@ -9,7 +9,7 @@
         "code-check": "npm run flow && npm run prettier && npm run remove-flow && npm run lint",
         "flow": "npx flow",
         "remove-flow": "flow-remove-types --pretty src/ -d lib/",
-        "test": "nyc ava",
+        "test": "npm run remove-flow && nyc ava",
         "uglify": "npx uglifyjs-folder lib/ -x .js -eo  build/ --log-level error",
         "build": "npm run test && npm run code-check && npm run uglify"
     },

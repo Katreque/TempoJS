@@ -1,10 +1,13 @@
 const test = require('ava');
+const { Player } = require('../lib');
 
-test('foo', (t) => {
-    t.pass();
+test('New Player Instance', (t) => {
+    const P = new Player();
+    t.deepEqual(P, new Player());
+    t.is(P.name, undefined);
 });
 
-test('bar', async (t) => {
-    const bar = Promise.resolve('bar');
-    t.is(await bar, 'bar');
+test('New Player Props', async (t) => {
+    const P = new Player("EOQ?!");
+    t.is(P.name, "EOQ?!");
 });
