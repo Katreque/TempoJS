@@ -10,7 +10,7 @@
         "flow": "npx flow",
         "remove-flow": "flow-remove-types --pretty src/ -d lib/",
         "test": "nyc ava",
-        "uglify": "npx uglifyjs-folder lib/ -eo build/ --log-level error",
+        "uglify": "npx uglifyjs-folder lib/ -x .js -eo  build/ --log-level error",
         "build": "npm run test && npm run code-check && npm run uglify"
     },
     "repository": {
