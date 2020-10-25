@@ -1,7 +1,7 @@
 // @flow
 
 class Player {
-    name: string;
+    declare name: string;
 
     constructor(name: string) {
         this.name = name;
