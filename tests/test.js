@@ -6,5 +6,5 @@ test('foo', (t) => {
 
 test('bar', async (t) => {
     const bar = Promise.resolve('bar');
-    t.is(await bar, 'bar1');
+    t.is(await bar, 'bar');
 });
