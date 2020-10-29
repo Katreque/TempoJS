@@ -11,7 +11,8 @@
     "lines": 95,
     "functions": 100,
     "reporter": [
-        "text",
-        "html"
+        "lcov",
+        "html",
+        "text"
     ]
 }
