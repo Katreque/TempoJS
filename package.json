@@ -10,6 +10,7 @@
         "flow": "npx flow",
         "remove-flow": "flow-remove-types --pretty src/ -d lib/",
         "test": "npm run remove-flow && nyc ava",
+        "coverage": "nyc report --reporter=text-lcov | coveralls",
         "uglify": "npx uglifyjs-folder lib/ -x .js -eo  build/ --log-level error",
         "dev-build": "npm run flow && npm run prettier && npm run remove-flow",
         "build": "npm run test && npm run code-check && npm run uglify"
