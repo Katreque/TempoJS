@@ -1,8 +1,8 @@
 {
-    "name": "tempojs",
+    "name": "@katreque/tempojs",
     "version": "0.1.0",
-    "description": "TempoJS is a JavaScript game engine for turn-based games.",
-    "main": "index.js",
+    "description": "TempoJS is a JavaScript Game Engine for turn-based games on both Client or Server side.",
+    "main": "build/index.js",
     "scripts": {
         "prettier": "npx prettier --write .",
         "lint": "npx eslint --fix lib/**/*.js",
@@ -18,8 +18,8 @@
         "type": "git",
         "url": "git+https://github.com/Katreque/TempoJS.git"
     },
-    "author": "",
-    "license": "ISC",
+    "author": "Katreque",
+    "license": "BSD 3-Clause Licensed",
     "bugs": {
         "url": "https://github.com/Katreque/TempoJS/issues"
     },

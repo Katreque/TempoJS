@@ -69,10 +69,13 @@ test('runGameIteration should work.', (t) => {
     const spyEE = sinon.spy(eventEmitter);
     Game.runGameIteration();
 
-    console.log(spyEE.callCount);
     t.true(Game.getActions.calledOnce);
 
     //Still need adjustments.
+    
+    //Should be 1
+    //console.log(spyEE.callCount);
+
     //t.true(Game.sortAction.calledOnce);
     //t.true(spyEE.called);
 });
