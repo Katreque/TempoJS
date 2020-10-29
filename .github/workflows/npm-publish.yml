@@ -15,7 +15,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm build
+      - run: npm build --verbose
+      - name: Package Version Check Action
+      - uses: technote-space/package-version-check-action@v1.5.2
+
 
   publish-npm:
     needs: build
