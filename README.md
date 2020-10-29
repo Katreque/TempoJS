@@ -12,7 +12,7 @@ TempoJS is a JavaScript Game Engine for turn-based games on both Client or Serve
 First, install the package on your project via NPM.
 
 ```
-npm install tempo-js --save
+npm i @katreque/tempojs --save
 ```
 
 Here's a quick example of what to use in order to develop your game. Further documentation will added soon. :)
