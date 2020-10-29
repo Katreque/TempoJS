@@ -1,9 +1,15 @@
 <div align="center">
 <img src="./images/TempoJSLogo.png" alt="drawing" width="200"/><br />
 
-# TempoJS · [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) · [![Coverage Status](https://coveralls.io/repos/github/Katreque/TempoJS/badge.svg?branch=master)](https://coveralls.io/github/Katreque/TempoJS?branch=master)
+# JavaScript Game Engine
 
 TempoJS is a JavaScript Game Engine for turn-based games on both Client or Server side.
+
+[![Downloads NPM](https://img.shields.io/npm/dw/@katreque/tempojs?style=flat-square)](https://www.npmjs.com/package/@katreque/tempojs)
+[![Coverage Status](https://img.shields.io/coveralls/github/Katreque/TempoJS?color=limon&style=flat-square)](https://coveralls.io/github/Katreque/TempoJS?branch=master)
+[![Discord](https://img.shields.io/discord/681928564592869392?label=Discord&style=flat-square)](https://discord.gg/SD3FtBy)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg?style=flat-square)](https://opensource.org/licenses/BSD-3-Clause) 
 
 </div>
 
