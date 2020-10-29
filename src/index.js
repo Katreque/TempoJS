@@ -1,8 +1,17 @@
 // @flow
 
+const { eventEmitter, eventListener, GLOBAL_EVENTS } = require('./events.js');
+
 // Abstract Classes
-const Player = require('./classes/player');
+const Action = require('./classes/Action');
+const GameLoop = require('./classes/GameLoop');
+const Player = require('./classes/Player');
 
 module.exports = {
-    Player
+    Action,
+    GameLoop,
+    Player,
+    eventEmitter,
+    eventListener,
+    GLOBAL_EVENTS
 };

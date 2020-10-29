@@ -1,10 +1,14 @@
 // @flow
 
-class Player {
-    declare name: string;
+const fgAction = require('./Action');
 
-    constructor(name: string) {
-        this.name = name;
+class Player {
+    declare id: string | number;
+    declare Actions: Array<fgAction>;
+
+    constructor(id: string | number, Actions: Array<fgAction>) {
+        this.id = id;
+        this.Actions = Actions || [];
     }
 }
 
