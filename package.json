@@ -1,6 +1,6 @@
 {
     "name": "@katreque/tempojs",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "TempoJS is a JavaScript Game Engine for turn-based games on both Client or Server side.",
     "main": "build/index.js",
     "scripts": {
