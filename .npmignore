@@ -1,0 +1,17 @@
+/.nyc_output
+/coverage
+/images
+/lib
+/src
+/tests
+.editorconfig
+.eslintrc.json
+.flowconfig
+.gitignore
+.npmrc
+.nycrc
+.prettierignore
+.prettierrc.json
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
