@@ -22,7 +22,6 @@ test('Checking new instance of Action.', (t) => {
     const Class = new Action();
     t.true(Class instanceof Action);
 
-    t.is(Class.name, undefined);
     t.is(Class.priority, 1);
     t.is(Class.subPriority, 1);
 
@@ -37,7 +36,6 @@ test('Checking default props on the child class.', (t) => {
     const Class = new MAction();
     t.truthy(Class instanceof Action);
 
-    t.is(Class.name, undefined);
     t.is(Class.priority, 1);
     t.is(Class.subPriority, 1);
 
@@ -51,7 +49,7 @@ test('Checking default props on the child class.', (t) => {
 test('Checking props on the child class.', (t) => {
     const Class = new MAction('Action', 2, 3, 'AnyThing');
 
-    t.is(Class.name, 'Action');
+    t.is(Class.id, 'Action');
     t.is(Class.priority, 2);
     t.is(Class.subPriority, 3);
     t.is(Class.a, 'AnyThing');

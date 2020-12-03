@@ -72,7 +72,7 @@ test('runGameIteration should work.', (t) => {
     t.true(Game.getActions.calledOnce);
 
     //Still need adjustments.
-    
+
     //Should be 1
     //console.log(spyEE.callCount);
 

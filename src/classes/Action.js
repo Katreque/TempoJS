@@ -1,14 +1,12 @@
 // @flow
 
 class Action {
-    declare name: string;
-
+    declare id: string | number;
     declare priority: number;
-
     declare subPriority: number;
 
-    constructor(name: string, priority: number, subPriority: number) {
-        this.name = name;
+    constructor(id: string | number, priority: number, subPriority: number) {
+        this.id = id;
         this.priority = priority || 1;
         this.subPriority = subPriority || 1;
     }

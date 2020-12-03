@@ -9,7 +9,7 @@ TempoJS is a JavaScript Game Engine for turn-based games on both Client or Serve
 [![Coverage Status](https://img.shields.io/coveralls/github/Katreque/TempoJS?color=limon&style=flat-square)](https://coveralls.io/github/Katreque/TempoJS?branch=master)
 [![Discord](https://img.shields.io/discord/681928564592869392?label=Discord&style=flat-square)](https://discord.gg/SD3FtBy)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg?style=flat-square)](https://opensource.org/licenses/BSD-3-Clause) 
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg?style=flat-square)](https://opensource.org/licenses/BSD-3-Clause)
 
 </div>
 
@@ -24,7 +24,7 @@ npm i @katreque/tempojs --save
 Here's a quick example of what to use in order to develop your game. Further documentation will added soon. :)
 
 ```javascript
-const { Action, GameLoop, Player, eventListener, GLOBAL_EVENTS } = require("tempojs");
+const { Action, GameLoop, Player, eventListener, GLOBAL_EVENTS } = require('tempojs');
 
 class MyPlayer extends Player {
     constructor(id, Actions, name) {
@@ -40,21 +40,25 @@ class MyAction extends Action {
 
     //The logic behind this Action.
     run() {
-        console.log(`Name: ${this.name}, Priority: ${this.priority}, SubPriority: ${this.subPriority}`);
+        console.log(
+            `Name: ${this.name}, Priority: ${this.priority}, SubPriority: ${this.subPriority}`
+        );
     }
 }
 
-const MA1 = new MyAction("Action 1", 1, 1);
-const MA2 = new MyAction("Action 2", 1, 2);
+const MA1 = new MyAction('Action 1', 1, 1);
+const MA2 = new MyAction('Action 2', 1, 2);
 
-const Player1 = new MyPlayer(1, [MA1], "Pog Player");
-const Player2 = new MyPlayer(2, [MA2], "Noob Player");
+const Player1 = new MyPlayer(1, [MA1], 'Pog Player');
+const Player2 = new MyPlayer(2, [MA2], 'Noob Player');
 
 //New Game Instance
 const Game = new GameLoop([Player1, Player2], []);
 
 //Global Events Listeners
-eventListener(GLOBAL_EVENTS.turnEnded, () => {console.log("End of turn.")});
+eventListener(GLOBAL_EVENTS.turnEnded, () => {
+    console.log('End of turn.');
+});
 
 //Run one turn of the game
 Game.runGameIteration();
