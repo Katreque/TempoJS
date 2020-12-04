@@ -11,6 +11,8 @@
     },
     "rules": {
         "class-methods-use-this": "off",
-        "no-unused-vars": ["error", { "varsIgnorePattern": "fg" }]
+        "no-unused-vars": ["error", { "varsIgnorePattern": "fg" }],
+        "no-plusplus": [0],
+        "no-await-in-loop": [0]
     }
 }

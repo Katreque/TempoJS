@@ -34,14 +34,14 @@ class MyPlayer extends Player {
 }
 
 class MyAction extends Action {
-    constructor(name, priority, subPriority) {
-        super(name, priority, subPriority);
+    constructor(id, priority, subPriority) {
+        super(id, priority, subPriority);
     }
 
     //The logic behind this Action.
     run() {
         console.log(
-            `Name: ${this.name}, Priority: ${this.priority}, SubPriority: ${this.subPriority}`
+            `ID: ${this.id}, Priority: ${this.priority}, SubPriority: ${this.subPriority}`
         );
     }
 }
@@ -61,7 +61,7 @@ eventListener(GLOBAL_EVENTS.turnEnded, () => {
 });
 
 //Run one turn of the game
-Game.runGameIteration();
+await Game.runGameIteration();
 
 /*
 Output:

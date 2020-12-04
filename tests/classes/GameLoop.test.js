@@ -39,6 +39,23 @@ const Player2 = new MyPlayer(2, [ma2, ma3]);
 
 const Game = new GameLoop([Player1, Player2], [ma0, ma1, ma2, ma3, ma4, ma5, ma6, ma7, ma8]);
 
+test('Checking new instance of Action.', (t) => {
+    t.truthy(Game instanceof GameLoop);
+
+    t.deepEqual(Game.Players, [Player1, Player2]);
+    t.deepEqual(Game.GameActions, [ma0, ma1, ma2, ma3, ma4, ma5, ma6, ma7, ma8]);
+    t.is(Game.stopIteration, false);
+});
+
+test('stopGameIteration should be a function.', (t) => {
+    t.is(typeof Game.stopGameIteration, typeof function () {});
+});
+
+test('stopGameIteration should work.', (t) => {
+    Game.stopGameIteration();
+    t.is(Game.stopIteration, true);
+});
+
 test('sortAction should be a function.', (t) => {
     t.is(typeof Game.sortAction, typeof function () {});
 });
@@ -64,18 +81,27 @@ test('runGameIteration should be a function.', (t) => {
     t.is(typeof Game.runGameIteration, typeof function () {});
 });
 
-test('runGameIteration should work.', (t) => {
-    const spy = sinon.spy(Game);
-    const spyEE = sinon.spy(eventEmitter);
-    Game.runGameIteration();
+//Still need adjustments on Spys.
+test('runGameIteration should work.', async (t) => {
+    const Game2 = new GameLoop([Player1, Player2], [ma0, ma1]);
 
-    t.true(Game.getActions.calledOnce);
+    //Spys
+    const gA = sinon.spy(Game2, 'getActions');
+    const sA = sinon.spy(Game2, 'sortAction');
+    const GA1 = sinon.spy(Game2.GameActions[0], 'run');
+    const GA2 = sinon.spy(Game2.GameActions[1], 'run');
+    const eE = sinon.spy(eventEmitter);
 
-    //Still need adjustments.
+    await Game2.runGameIteration();
 
-    //Should be 1
-    //console.log(spyEE.callCount);
+    t.true(gA.calledOnce);
+    //t.true(sA.calledOnce);
+    //t.true(GA1.calledOnce);
+    //t.true(GA2.calledOnce);
+    //t.true(eE.calledOnce);
+});
 
-    //t.true(Game.sortAction.calledOnce);
-    //t.true(spyEE.called);
+//Still need adjustments.
+test('runGameIteration should stop once stopGameIteration is called.', (t) => {
+    t.pass();
 });
