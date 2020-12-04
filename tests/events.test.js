@@ -8,9 +8,22 @@ test('eventEmitter must be a function.', (t) => {
     t.is(typeof eventEmitter, typeof function () {});
 });
 
-test('eventEmitter should work.', (t) => {
+test('eventEmitter only with id should work.', (t) => {
     const r = eventEmitter('id');
     t.is(r, ee.emit('id'));
+});
+
+test('eventEmitter with id and arg should work.', (t) => {
+    const r = eventEmitter('id', 'pog');
+    t.is(r, ee.emit('id', 'pog'));
+});
+
+test('eventEmitter args should accept any.', (t) => {
+    const r = eventEmitter('id', { a: 'a' });
+    t.is(r, ee.emit('id', { a: 'a' }));
+
+    const s = eventEmitter('id', 123);
+    t.is(s, ee.emit('id', 123));
 });
 
 test('eventEmitter with no id should throw.', (t) => {

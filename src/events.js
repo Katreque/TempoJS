@@ -9,12 +9,12 @@ const GLOBAL_EVENTS = {
     turnEnded: 'TURN_ENDED'
 };
 
-function eventEmitter(id: string): any {
+function eventEmitter(id: string, arg: any): any {
     if (!id) {
         throw new Error(throwMissingParameters('id'));
     }
 
-    return ee.emit(id);
+    return ee.emit(id, arg);
 }
 
 function eventListener(id: string, cb: function): any {
