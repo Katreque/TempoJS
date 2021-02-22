@@ -40,9 +40,7 @@ class MyAction extends Action {
 
     //The logic behind this Action.
     run() {
-        console.log(
-            `ID: ${this.id}, Priority: ${this.priority}, SubPriority: ${this.subPriority}`
-        );
+        console.log(`ID: ${this.id}, Priority: ${this.priority}, SubPriority: ${this.subPriority}`);
     }
 }
 

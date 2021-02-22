@@ -10,15 +10,18 @@ class GameLoop {
     declare Players: Array<fgPlayer>;
     declare GameActions: Array<fgAction>;
     declare stopIteration: boolean;
+    declare turns: number;
 
     constructor(Players: Array<fgPlayer>, GameActions: Array<fgAction>) {
         this.Players = Players;
         this.GameActions = GameActions;
         this.stopIteration = false;
+        this.turns = 0;
     }
 
     async runGameIteration() {
         this.stopIteration = false;
+        this.turns++;
         const orderedActions = this.getActions(this.Players, this.GameActions);
 
         // Sort by Priority
