@@ -45,6 +45,7 @@ test('Checking new instance of Action.', (t) => {
     t.deepEqual(Game.Players, [Player1, Player2]);
     t.deepEqual(Game.GameActions, [ma0, ma1, ma2, ma3, ma4, ma5, ma6, ma7, ma8]);
     t.is(Game.stopIteration, false);
+    t.is(Game.turns, 0);
 });
 
 test('stopGameIteration should be a function.', (t) => {
@@ -95,6 +96,8 @@ test('runGameIteration should work.', async (t) => {
     await Game2.runGameIteration();
 
     t.true(gA.calledOnce);
+    t.is(Game2.turns, 1);
+
     //t.true(sA.calledOnce);
     //t.true(GA1.calledOnce);
     //t.true(GA2.calledOnce);
